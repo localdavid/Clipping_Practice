@@ -4,46 +4,54 @@
     <meta charset='UTF-8'>
     <title>Object Bounding-Box Clipping paths, 
         on SVG and HTML elements</title>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-svg {
-    display: block;
-}
-body {
-    background-color: #432;
-    margin: 0.5em;
-}
-header {
-    background: darkSeaGreen;
-    position: relative;
-    z-index: 0;
-    padding: 0.1rem;
-}
-header::before {
-    background: indigo;
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0.5rem; bottom: 0.5rem;
-    left: 1.5rem; right: 1.5rem;
-}
-h1 {
-    background: plum;
-    color: indigo;
-    text-align: center;
-    padding: 10%;
-    margin: 2rem 4rem;
-    font-size: 300%;
-    font-family: Pacifico, sans-serif;
-    font-weight: normal;
-}
-header, header::before, h1 {
-    -webkit-clip-path: url(#wave-edges);
-    clip-path: url(#wave-edges);
-}
-</style></head>
+	<style>
+		
+		<link rel="stylesheet" type="text/css" href="css.css">
+		
+	@import url('https://fonts.googleapis.com/css?family=Pacifico');
+	svg {
+	    display: block;
+	}
+	body {
+	    background-color: #432;
+	    margin: 0.5em;
+	}
+	header {
+	    background: darkSeaGreen;
+	    position: relative;
+	    z-index: 0;
+	    padding: 0.1rem;
+	}
+	header::before {
+	    background: indigo;
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    z-index: -1;
+	    top: 0.5rem; bottom: 0.5rem;
+	    left: 1.5rem; right: 1.5rem;
+	}
+	h1 {
+	    background: plum;
+	    color: indigo;
+	    text-align: center;
+	    padding: 10%;
+	    margin: 2rem 4rem;
+	    font-size: 300%;
+	    font-family: Pacifico, sans-serif;
+	    font-weight: normal;
+	}
+	header, header::before, h1 {
+	    -webkit-clip-path: url(#wave-edges);
+	    clip-path: url(#wave-edges);
+	}
+	</style>
+</head>
+
 <body>
+	
+	<div id="box"></div>
+
 
 <svg viewBox="0 0 400 300" role="img"
      aria-label="Blue and white violets,
